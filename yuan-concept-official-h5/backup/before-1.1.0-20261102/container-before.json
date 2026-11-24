@@ -1,0 +1,313 @@
+[
+    {
+        "Id": "5b6374e93943799b265eee45bbb96fc72e166b12555f468bd8aba4b67e09b8ce",
+        "Created": "2026-10-30T10:47:56.529141013Z",
+        "Path": "node",
+        "Args": [
+            "/app-site/runtime/static-server.mjs"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 892470,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-30T10:47:56.894019882Z",
+            "FinishedAt": "0001-01-01T00:00:00Z",
+            "Health": {
+                "Status": "healthy",
+                "FailingStreak": 0,
+                "Log": [
+                    {
+                        "Start": "2026-11-02T15:03:45.086265834+08:00",
+                        "End": "2026-11-02T15:03:47.280487005+08:00",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-11-02T15:04:17.283708046+08:00",
+                        "End": "2026-11-02T15:04:19.369727982+08:00",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-11-02T15:04:49.371272477+08:00",
+                        "End": "2026-11-02T15:04:51.480718825+08:00",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-11-02T15:05:21.482140471+08:00",
+                        "End": "2026-11-02T15:05:23.587899168+08:00",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-11-02T15:05:53.591956728+08:00",
+                        "End": "2026-11-02T15:05:55.375496117+08:00",
+                        "ExitCode": 0,
+                        "Output": ""
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:6a85286904587d56d41281a57aca69bf76ab626b890a668f4beeefeb3fe69bd4",
+        "ResolvConfPath": "/var/lib/docker/containers/5b6374e93943799b265eee45bbb96fc72e166b12555f468bd8aba4b67e09b8ce/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/5b6374e93943799b265eee45bbb96fc72e166b12555f468bd8aba4b67e09b8ce/hostname",
+        "HostsPath": "/var/lib/docker/containers/5b6374e93943799b265eee45bbb96fc72e166b12555f468bd8aba4b67e09b8ce/hosts",
+        "LogPath": "/var/lib/docker/containers/5b6374e93943799b265eee45bbb96fc72e166b12555f468bd8aba4b67e09b8ce/5b6374e93943799b265eee45bbb96fc72e166b12555f468bd8aba4b67e09b8ce-json.log",
+        "Name": "/yuan-concept-official-h5",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {
+                    "max-file": "3",
+                    "max-size": "10m"
+                }
+            },
+            "NetworkMode": "yuan-concept-official_default",
+            "PortBindings": {
+                "8080/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "18180"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": [
+                "ALL"
+            ],
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": true,
+            "SecurityOpt": [
+                "no-new-privileges:true"
+            ],
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 134217728,
+            "NanoCpus": 250000000,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 268435456,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": 64,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+                {
+                    "Type": "bind",
+                    "Source": "/usr/local/yuan-concept/yuan-concept-official-h5/releases/1.0.1",
+                    "Target": "/app-site",
+                    "ReadOnly": true
+                }
+            ],
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ],
+            "Init": true
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/usr/local/yuan-concept/yuan-concept-official-h5/releases/1.0.1",
+                "Destination": "/app-site",
+                "Mode": "",
+                "RW": false,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "5b6374e93943",
+            "Domainname": "",
+            "User": "1001:1001",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "8080/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "NODE_ENV=production",
+                "HOST=0.0.0.0",
+                "PORT=8080",
+                "SITE_ROOT=/app-site/dist",
+                "TZ=Asia/Shanghai",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NODE_VERSION=24.15.0",
+                "YARN_VERSION=1.22.22",
+                "NEXT_TELEMETRY_DISABLED=1",
+                "HOSTNAME=0.0.0.0"
+            ],
+            "Cmd": [
+                "/app-site/runtime/static-server.mjs"
+            ],
+            "Healthcheck": {
+                "Test": [
+                    "CMD",
+                    "node",
+                    "-e",
+                    "fetch('http://127.0.0.1:8080/ready').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
+                ],
+                "Interval": 30000000000,
+                "Timeout": 5000000000,
+                "StartPeriod": 10000000000,
+                "Retries": 3
+            },
+            "Image": "sha256:6a85286904587d56d41281a57aca69bf76ab626b890a668f4beeefeb3fe69bd4",
+            "Volumes": null,
+            "WorkingDir": "/app-site",
+            "Entrypoint": [
+                "node"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "bb99b56de2a9cf3b0fcb0e4ca8f8598e8f74ac9e0a2941cde131b57ae4762c3c",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:6a85286904587d56d41281a57aca69bf76ab626b890a668f4beeefeb3fe69bd4",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "yuan-concept-official",
+                "com.docker.compose.project.config_files": "/usr/local/yuan-concept/yuan-concept-official-h5/deploy/docker-compose.yml",
+                "com.docker.compose.project.environment_file": "/etc/yuan-concept/yuan-concept-official-h5.env",
+                "com.docker.compose.project.working_dir": "/usr/local/yuan-concept/yuan-concept-official-h5/deploy",
+                "com.docker.compose.replace": "3f1aae5af5c7900c7fafa8bb6446b2070ebd3bf0f3e3a6a5494cbabaa4630d90",
+                "com.docker.compose.service": "yuan-concept-official-h5",
+                "com.docker.compose.version": "2.26.1",
+                "org.opencontainers.image.revision": "7d2ea4b"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "83398cc5f36f9582a9d9e4d683565bd231204711d018722423f339f625a6b695",
+            "SandboxKey": "/var/run/docker/netns/83398cc5f36f",
+            "Ports": {
+                "8080/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "18180"
+                    }
+                ]
+            },
+            "Networks": {
+                "yuan-concept-official_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "yuan-concept-official-h5",
+                        "yuan-concept-official-h5"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "cf76090350316831198c4056630d7ac8a84fb61fad527049b4d4b7b5661c27e5",
+                    "EndpointID": "418956e050462d2d2234ae6ab37700cd1c1fea57149549d18bac54c42a00788a",
+                    "Gateway": "172.19.0.1",
+                    "IPAddress": "172.19.0.2",
+                    "MacAddress": "12:44:49:0d:a0:8a",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "yuan-concept-official-h5",
+                        "5b6374e93943"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:0aa96c6e778ca2ec70af79acc1ad901a0998870579a3c129eb2bc4d68aad24aa",
+            "size": 2001,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]

@@ -1,0 +1,45 @@
+name: ${COMPOSE_PROJECT_NAME:?unique project name required}
+services:
+  yuan-concept-official-h5:
+    image: ${IMAGE_REF:?pinned runtime image required}
+    pull_policy: never
+    container_name: ${CONTAINER_NAME:?unique container name required}
+    entrypoint: ["node"]
+    command: ["/app-site/runtime/static-server.mjs"]
+    working_dir: /app-site
+    user: "1001:1001"
+    restart: unless-stopped
+    init: true
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    environment:
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      PORT: "8080"
+      SITE_ROOT: /app-site/dist
+      TZ: Asia/Shanghai
+    ports:
+      - "${BIND_ADDR:?loopback address required}:${HTTP_PORT:?allocated high port required}:8080"
+    volumes:
+      - type: bind
+        source: ${RELEASE_DIR:?real versioned release path required}
+        target: /app-site
+        read_only: true
+    deploy:
+      resources:
+        limits:
+          cpus: "${CPU_LIMIT:?cpu limit required}"
+          memory: ${MEM_LIMIT:?memory limit required}
+          pids: 64
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:8080/ready').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
